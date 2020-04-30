@@ -8,9 +8,9 @@ def data(market):
     df = pd.read_csv(url)
     return df
     
-def market_name():
+def market_name(market):
     # this may not be the best way to do it, but it worked pretty well for me 
-    df = pd.read_json('https://www.predictit.org/api/marketdata/markets/6598')
+    df = pd.read_json('https://www.predictit.org/api/marketdata/markets/'+str(market))
     # sets the market to a string and returns it. 
     text = str(df['name'][0])
     return text

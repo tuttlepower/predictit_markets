@@ -8,4 +8,7 @@ Given a number, returns a [Pandas](https://pandas.pydata.org/docs/) dataframe of
 print(df.head())`
 
 ![alt text](https://github.com/tuttlepower/predictit_markets/blob/master/images/output_example.PNG "Output Example")
+
 #market_name
+`print(market_name(6598))`
+
