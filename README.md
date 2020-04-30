@@ -7,13 +7,5 @@ Given a number, returns a [Pandas](https://pandas.pydata.org/docs/) dataframe of
 `df = data(6598)
 print(df.head())`
 
-
-  `ContractName                   Date OpenSharePrice HighSharePrice LowSharePrice CloseSharePriceTradeVolume
-0   Republican  3/31/2020 12:00:00 AM          $0.02          $0.02         $0.02           $0.02            
-1   Democratic  3/31/2020 12:00:00 AM          $0.99          $0.99         $0.99           $0.99            
-2   Republican   4/1/2020 12:00:00 AM          $0.02          $0.04         $0.02           $0.04            
-3   Democratic   4/1/2020 12:00:00 AM          $0.99          $0.99         $0.95           $0.95            
-4   Republican   4/2/2020 12:00:00 AM          $0.04          $0.04         $0.04           $0.04`
-
-
+![alt text](images\output_example.PNG "Output Example")
 #market_name
