@@ -7,5 +7,5 @@ Given a number, returns a [Pandas](https://pandas.pydata.org/docs/) dataframe of
 `df = data(6598)
 print(df.head())`
 
-![alt text](images\output_example.PNG "Output Example")
+![alt text](https://github.com/tuttlepower/predictit_markets/blob/master/images/output_example.PNG "Output Example")
 #market_name
