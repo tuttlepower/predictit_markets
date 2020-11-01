@@ -2,8 +2,7 @@
 import pandas as pd 
 
 def data(market, time = '90d'):
-    #24h,7d,30d, 90d,
-    #time = '90d'
+    #24h,7d,30d, 90d
     url = 'https://www.predictit.org/Resource/DownloadMarketChartData?marketid='+str(market)+'&timespan='+str(time)
     df = pd.read_csv(url)
     return df
