@@ -2,9 +2,9 @@ from setuptools import setup, find_packages
 
 setup(
     name="predictit_markets",  # Package name
-    version="0.1.0",  # Initial version
-    author="Your Name",
-    author_email="your.email@example.com",
+    version="0.1.1",  # Initial version
+    author="Travis Tuttle",
+    author_email="28586132+tuttlepower@users.noreply.github.com",
     description="A package for interacting with PredictIt markets",
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',

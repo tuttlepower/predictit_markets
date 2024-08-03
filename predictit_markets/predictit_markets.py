@@ -3,7 +3,7 @@
 import pandas as pd
 import requests
 
-def market_data(market, time=90, maxContracts=6):
+def market_data(market, time=90, max_contracts=6):
     """
     Fetch market data from PredictIt's API and return as a DataFrame.
 
@@ -18,7 +18,7 @@ def market_data(market, time=90, maxContracts=6):
     url = f'https://www.predictit.org/api/Public/GetMarketChartData/{market}'
     params = {
         'timespan': time,
-        'maxContracts': maxContracts,
+        'maxContracts': max_contracts,
         'isTimespanInHours': 'false'
     }
     try:
