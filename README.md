@@ -12,7 +12,8 @@ Can also take an integer for the max number of contracts, so if you only want to
 
 `print(df.head())`
 
-![Output image](https://raw.githubusercontent.com/tuttlepower/predictit_markets/master/predictit_markets/images/output_example.PNG")
+![PredictIt Markets Example](https://raw.githubusercontent.com/tuttlepower/predictit_markets/master/predictit_markets/images/output_example.PNG)
+
 
 # market_name
 
