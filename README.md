@@ -29,3 +29,4 @@ That's all there is to it. Predictit's API is in XML format, which I thought was
 
 - Thinking of adding the ability to get the data raw, but I think df's are fine for now. 
 - Thinking of adding charts, but may just throw a notebook up with examples.
+- Need to put publishing on release branch
