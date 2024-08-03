@@ -17,7 +17,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v3
         with:
-          python-version: '3.11'  # Set your Python version here
+          python-version: '3.11'  # Specify your Python version here
 
       - name: Install dependencies
         run: pip install -r requirements.txt
@@ -41,10 +41,11 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Build package
-        run: python setup.py sdist bdist_wheel
+        run: |
+          python setup.py sdist
+          python setup.py bdist_wheel
 
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@v1.7.1
         with:
           password: ${{ secrets.PYPI_API_TOKEN }}
-
