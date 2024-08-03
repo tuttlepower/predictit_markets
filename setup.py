@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="predictit_markets",  # Package name
-    version="0.1.2", 
+    version="0.1.3", 
     author="Travis Tuttle",
     author_email="28586132+tuttlepower@users.noreply.github.com",
     description="A package for interacting with PredictIt markets",
