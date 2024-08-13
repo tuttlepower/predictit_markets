@@ -3,7 +3,8 @@
 import unittest
 from unittest.mock import patch, Mock
 import requests
-from predictit_markets.predictit_markets import market_data
+import pandas as pd
+from predictit_markets.predictit_markets import all_markets, market_data
 
 class TestPredictItMarkets(unittest.TestCase):
 
@@ -63,6 +64,27 @@ class TestPredictItMarkets(unittest.TestCase):
 
         # Assert the DataFrame is None due to JSON error
         self.assertIsNone(df)
+    
+    @patch('predictit_markets.requests.get')
+    def test_all_markets_success(self, mock_get):
+        mock_get.return_value.status_code = 200
+        mock_get.return_value.json.return_value = {
+        'markets': [
+            {'id': 123, 'name': 'Market 1'},
+            {'id': 456, 'name': 'Market 2'},
+            ]
+        }
+
+        df = all_markets()
+
+   
+        expected_df = pd.DataFrame([
+        {'Market ID': 123, 'Market Name': 'Market 1'},
+        {'Market ID': 456, 'Market Name': 'Market 2'},
+    ])
+
+        pd.testing.assert_frame_equal(df, expected_df)
+
 
 if __name__ == '__main__':
     unittest.main()
